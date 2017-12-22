@@ -1,0 +1,142 @@
+@media screen and (max-height: 488px){
+	.navbar-nav{
+		height: 220px !important;
+	}
+}
+@media screen and (max-width: 1199px){
+	.navbar-nav{
+		width: 61%;
+	}
+}
+@media screen and (max-width: 992px){
+	.myName{
+		font-size: 60px;
+	}
+	.header-text{
+		width: 740px;
+	}
+	.navbar-nav{
+		width: 80%;
+	}
+	.navbar-nav li{
+		display: block;
+		text-align: center;
+	}
+	.navbar-nav li{
+		padding-bottom: 20px;
+	}
+	.navbar-nav{
+		font-size: 31px;
+    	height: 162px;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+		background-color: rgba(0,0,0,0.7);
+		font-size: 20px;
+	}
+	/*.navbar-toggle{
+		margin-top: 40px;
+	}*/
+	.navbar-default .navbar-toggle {
+	    border-color: #fff;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+	    background-color: #fff;
+	}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	    background-color: #000;
+	}
+}
+@media screen and (max-width: 767px){
+	.header-text{
+		width: 600px;
+	}
+	.myName {
+    	font-size: 55px;
+	}
+}
+@media screen and (max-width: 629px){
+	.header-text{
+		font-size: 21px;
+		width: 460px;
+	}
+	.social-network{
+		font-size: 30px;
+	}
+	.video-review{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 488px){
+	.myName {
+    	font-size: 38px;
+	}
+	.header-text {
+	    font-size: 19px;
+	    width: 400px;
+	}
+	.social-network {
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 417px){
+	.header-text{
+		width: 292px;
+	}
+	.social-network i {
+	    padding-right: 15px;
+	}
+
+}
+@media screen and (max-height: 500px){
+	.myName{
+		font-size: 30px;
+	}
+	.header-text{
+		font-size: 21px;
+	}
+	.social-network{
+		font-size: 21px;
+	}
+
+}
+@media screen and (max-width: 500px){
+	.fourth-right-block{
+		float: none;
+	}
+	.black:hover{
+		
+	}
+	.black{
+		margin: 0 auto;
+		width: 60%;
+	}
+
+}
+@media (min-width: 751px) and (max-width: 991px){
+	.black-small-size:hover{
+		width: 79%;
+	}
+	
+	/*.right-mask{
+		left: 65px !important;
+	}
+	.mask.left-mask {
+	    left: -11px;
+	    width: 88%;
+	}*/
+}
+@media screen and (max-width: 991px){
+	.view .mask{
+		display: none;
+	}
+}
+@media (max-width: 750px){
+	.black:hover{
+		box-shadow: none;
+	}
+}
+/*@media screen and (max-width: 408px){
+	#sliderFrame{
+		display: none;
+	}
+}*/

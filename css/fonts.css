@@ -1,0 +1,24 @@
+@font-face {
+ font-family: "FontinSans_Cyrillic_B_46b";
+ src: url("../fonts/FontinSans/FontinSans_Cyrillic_B_46b.otf");
+}
+@font-face {
+ font-family: "FontinSans_Cyrillic_BI_46b";
+ src: url("../fonts/FontinSans/FontinSans_Cyrillic_BI_46b.otf");
+}
+@font-face {
+ font-family: "FontinSans_Cyrillic_BI_46b";
+ src: url("../fonts/FontinSans/FontinSans_Cyrillic_I_46b.otf");
+}
+@font-face {
+ font-family: "FontinSans_Cyrillic_R_46b";
+ src: url("../fonts/FontinSans/FontinSans_Cyrillic_R_46b.otf");
+}
+@font-face {
+ font-family: "Rounds Black";
+ src: url("../fonts/rounds/Rounds Black.otf");
+}
+@font-face {
+ font-family: "FontAwesome";
+ src: url("../lib/FontAwesome/FontAwesome.otf");
+}

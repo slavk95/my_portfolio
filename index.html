@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="This is my first project ;)">
+		<meta name="keywords" content="portfolio, intita, IT project">
+		<meta name="author" content="Viacheslav Olshevskyi">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Adaptive -->
+		<title>Olshevskyi (・∀・)ノ</title>
+		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap-theme.css">
+		<link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="lib/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/media.css">
+		<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
+		<link rel="shortcut icon" href="http://icons.iconarchive.com/icons/ariil/alphabet/256/Letter-V-icon.png" type="image/png">
+		<link rel="stylesheet" type="text/css" href="lib/OwlCarousel2/dist/assets/owl.carousel.min.css">
+		<link rel="stylesheet" type="text/css" href="lib/OwlCarousel2/dist/assets/owl.theme.default.min.css">
+	</head>
+	<body id="body">
+		<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+			  	if (d.getElementById(id)) return;
+			  	js = d.createElement(s); js.id = id;
+			  	js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10';
+			  	fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+
+		<!--Bootstrap Navigation Begin-->
+		<div class="navbar navbar-default navbar-fixed-top" role="navigation" id="nav">
+	    	<div class="container">
+	        	<div class="navbar-header">
+	        		<button id="sandwich" type="button" class="navbar-toggle animated infinite pulse" data-toggle="collapse" data-target=".navbar-collapse">
+	            		<span class="sr-only">Toggle navigation</span>
+	            		<span class="icon-bar"></span>
+	            		<span class="icon-bar"></span>
+	            		<span class="icon-bar"></span>
+	          		</button>
+	          		<a class="navbar-brand" href="#">Viacheslav Olshevskyi</a>
+	        	</div>
+	        	<div class="navbar-collapse collapse">
+	        		<ul class="nav navbar-nav">
+	            		<li class="active"><a href="index.html">Home</a></li>
+	            		<li><a data-toggle="modal" data-target="#myModal" href="#about">About</a></li>
+	            		<li><a target="_blank" href="CURRICULUM_VITAE.pdf">Resume</a></li>
+	          		</ul>
+	        	</div><!--/.nav-collapse -->
+	      	</div>
+	    </div>
+	    <!--Bootstrap Navigation End-->
+
+	    <!-- Header Begin -->
+	    <div class="header" id="header">
+	    	<video class="header-video" id="header-video" autoplay="autoplay">
+	    		<source src="video/Vin2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+	    	</video>
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-md-12">
+	    				<h1 class="myName " id="myName">I'm Viacheslav</h1>
+	    				<h1 class="myName" id="mySurName">Olshevskyi</h1>
+	    				<p class="header-text" id="header-text">I'm a future full stack web-developer, creating awesome and effective web-sites on HTML, CSS, JS, Wordpress, JQuery, PHP. Let's start scrolling and learn more about me.</p>
+	    				<div class="header-line" id="header-line"></div>
+	    				<div class="social-network">
+	    					<a href=""><i class="fa fa-facebook" aria-hidden="true" id="fa-facebook"></i></a>
+	    					<a href=""><i class="fa fa-twitter" aria-hidden="true" id="fa-twitter"></i></a>
+	    					<a href=""><i class="fa fa-google-plus" aria-hidden="true" id="fa-google-plus"></i></a>
+	    					<a href=""><i class="fa fa-linkedin" aria-hidden="true" id="fa-linkedin"></i></a>
+	    					<a href=""><i class="fa fa-instagram" aria-hidden="true" id="fa-instagram"></i></a>
+	    					<a href=""><i class="fa fa-dribbble" aria-hidden="true" id="fa-dribbble"></i></a>
+	    					<a href=""><i class="fa fa-skype" aria-hidden="true" id="fa-skype"></i></a>
+	    				</div>
+	    				<center>
+	    					<button id="intitaShowInformation" class="btn btn-primary btn-lg show-intita animated infinite" data-toggle="modal" data-target="#myModal">
+						        Show information from INTITA
+							</button>
+						</center>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <!-- Header End -->
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+		    	<div class="modal-content">
+		      		<div class="modal-header">
+		        		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        		<h4 class="modal-title" id="myModalLabel">Information from INTITA</h4>
+		      		</div>
+		      		<div class="modal-body">
+		      			<center>
+		      				<img id="avatar" src="#">
+		      			</center>
+		                <p id="mainInfo"></p>
+		                <p id="teacher">Information about trainer:<br></p>
+		                <p id="courses"></p>
+		                <p id="courseDetail"></p>
+		                <p id="moduleInfo"></p>
+		                <p id="courseModules"></p> 
+		                <p id="moduleLectures"></p>  
+		      		</div>
+		      		<div class="modal-footer">
+		        		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      		</div>
+		    	</div>
+		  	</div>
+		</div>
+	    <section class="fourth">
+	    	<div class="container">
+	    		<div class="row fourth-subSection">
+	    			<div class="col-md-12">
+	    				<p class="fourth-title">CHECK OUT SOME OF MY WORKS.</p>
+	    			</div>
+	    		</div>
+	    		<div class="row fourth-item">
+	    			<div class="col-md-3 col-sm-6 col-xs-6 inner-fourth-item view">
+	    				<a target="_blank" href="http://portfolio.web-lessons.in.ua/z/" id="work1" data-title="work1">
+		    				<div class="black black-small-size">
+		    					<img class="img-responsive fourth-img" src="img/1.jpg" >
+			    				<div class="mask left-mask">
+								    <h2>НОВЫЙ ШАГ</h2>
+								    <p>Спортивно-реабилитационный центр реабилитация после операций и травм</p>
+								</div>
+							</div>	
+						</a>
+	    			</div>
+	    			<div class="col-md-3 col-sm-6 col-xs-6 inner-fourth-item view">
+	    				<a href="http://portfolio.web-lessons.in.ua/m/" target="_blank" class="fourth-right-block">
+		    				<div class="black">
+		    					<img class="img-responsive fourth-img" src="img/2.jpg">
+		    					<div class="mask right-mask">
+							    	<h2>скп</h2>
+							    	<p>Проектирование, изготовление, и монтаж металлоконструкций</p>
+								</div>
+							</div>
+						</a>	
+	    			</div>
+	    			<div class="col-md-3 col-sm-6 col-xs-6 inner-fourth-item view">
+	    				<a href="http://portfolio.web-lessons.in.ua/g/" target="_blank">
+		    				<div class="black black-small-size">
+		    					<img class="img-responsive fourth-img" src="img/3.jpg">
+			    				<div class="mask left-mask">
+								    <h2>термофикс</h2>
+								    <p>Штукатурка, теплоизоляция, шумоизоляция - в одном !!!</p>
+								</div>
+							</div>		
+						</a>	
+	    			</div>
+	    			<div class="col-md-3 col-sm-6 col-xs-6 inner-fourth-item view">
+	    				<a href="http://portfolio.web-lessons.in.ua/d/" target="_blank" class="fourth-right-block">
+		    				<div class="black">
+		    					<img class="img-responsive fourth-img" src="img/4.jpg">
+			    				<div class="mask right-mask">
+								    <h2>Нео дизайн</h2>
+								    <p>Дизайн наружной рекламы. Дизайн фирменного стиля</p>
+								</div>
+							</div>
+						</a>	
+	    			</div>
+	    		</div>
+	    		<div class="row fourth-item">
+	    			<div class="col-md-3 col-sm-6 col-xs-6 inner-fourth-item view">
+	    				<a href="http://portfolio.web-lessons.in.ua/a/" target="_blank">
+		    				<div class="black black-small-size">
+		    					<img class="img-responsive fourth-img" src="img/5.jpg">
+			    				<div class="mask left-mask">
+								    <h2>Нео дизайн</h2>
+								    <p>Качественная фигурная резка пенопласта</p>
+								</div>
+							</div>	
+						</a>	
+	    			</div>
+	    			<div class="col-md-3 col-sm-6 col-xs-6 inner-fourth-item view">
+	    				<a href="http://portfolio.web-lessons.in.ua/f/" target="_blank" class="fourth-right-block">
+		    				<div class="black">
+		    					<img class="img-responsive fourth-img" src="img/6.jpg">
+			    				<div class="mask right-mask">
+								    <h2>Нео дизайн</h2>
+								    <p>Качественная УФ печать на твердых материалах</p>
+								</div>
+							</div>
+						</a>	
+	    			</div>
+	    			<div class="col-md-3 col-sm-6 col-xs-6 inner-fourth-item view">
+	    				<a href="http://portfolio.web-lessons.in.ua/q/" target="_blank">
+		    				<div class="black black-small-size">
+		    					<img class="img-responsive fourth-img" src="img/7.jpg">
+			    				<div class="mask left-mask">
+								    <h2>Нео дизайн</h2>
+								    <p>Лазерная гравировка пластика. Долговечность изображения, недоступная другим способам персонификации.</p>
+								</div>
+							</div>
+						</a>	
+	    			</div>
+	    			<div class="col-md-3 col-sm-6 col-xs-6 inner-fourth-item view">
+	    				<a href="http://portfolio.web-lessons.in.ua/e/" target="_blank" class="fourth-right-block">
+		    				<div class="black">
+		    					<img class="img-responsive fourth-img" src="img/8.jpg">
+			    				<div class="mask right-mask">
+								    <h2>Нео дизайн</h2>
+								    <p>Аренда рекламоносителей. Только выгодные места под рекламу по всей Украине.</p>
+								</div>
+							</div>	
+						</a>	
+	    			</div>
+	    		</div>
+	    	</div>
+	    </section>
+	    <section class="fifth">
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-md-12">
+	    				<p class="fourth-title">SKILLS.</p>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col-md-2 col-sm-4 col-xs-6">
+	    				<div class="technology-img">
+	    					<center>
+	    						<img src="img/technology/html.png" class="img-responsive">
+	    					</center>	
+	    				</div>
+	    				<div class="progress">
+							<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+								90%	
+							</div>
+						</div>
+	    			</div>
+	    			<div class="col-md-2 col-sm-4 col-xs-6">
+	    				<div class="technology-img">
+	    					<center>
+	    						<img src="img/technology/css.png" class="img-responsive">
+	    					</center>	
+	    				</div>
+	    				<div class="progress">
+							<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+								90%	
+						  	</div>
+						</div>
+	    			</div>
+	    			<div class="col-md-2 col-sm-4 col-xs-6">
+	    				<div class="technology-img">
+	    					<center>
+	    						<img src="img/technology/js.png" class="img-responsive">
+	    					</center>	
+	    				</div>
+	    				<div class="progress">
+							<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+								70%	
+						  	</div>
+						</div>
+	    			</div>
+	    			<div class="col-md-2 col-sm-4 col-xs-6">
+	    				<div class="technology-img">
+	    					<center>
+	    						<img src="img/technology/php.png" class="img-responsive">
+	    					</center>	
+	    				</div>
+	    				<div class="progress">
+							<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+								60%	
+						  	</div>
+						</div>
+	    			</div>
+	    			<div class="col-md-2 col-sm-4 col-xs-6">
+	    				<div class="technology-img">
+	    					<center>
+	    						<img src="img/technology/angularjs.png" class="img-responsive">
+	    					</center>	
+	    				</div>
+	    				<div class="progress">
+							<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+								20%	
+						  	</div>
+						</div>
+	    			</div>
+	    			<div class="col-md-2 col-sm-4 col-xs-6">
+	    				<div class="technology-img">
+	    					<center>
+	    						<img src="img/technology/Homer_eating.png" class="img-responsive">
+	    					</center>	
+	    				</div>
+	    				<div class="progress">
+							<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+								200%	
+						  	</div>
+						</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </section>
+	    <section class="sixth">
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-md-12">
+	    				<p class="fourth-title">Reviews.</p>
+	    			</div>
+	    			<div class="col-md-12">
+	    				<div class="owl-carousel owl-theme">
+						    <div class="item-video"><center><iframe class="video-review" height="315" src="https://www.youtube.com/embed/W8hwYb_-CuU" frameborder="0" allowfullscreen></iframe></center></div>
+						    <div class="item-video"><center><iframe class="video-review" height="315" src="https://www.youtube.com/embed/8RETFyDKcw0" frameborder="0" allowfullscreen></iframe></center></div>
+						    <div class="item-video"><center><iframe class="video-review" height="315" src="https://www.youtube.com/embed/wsUhyiO31DY" frameborder="0" allowfullscreen></iframe></center></div>
+						</div>
+	    			</div>
+	    		</div>
+			</div>
+	    </section>
+	    <section class="seventh">
+	    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.5969204730163!2d28.395615715146782!3d49.22717098262418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5c45ae0ac501%3A0x2b88e678e1e6dd4e!2sMykoly+Vaschuka+St%2C+20%2C+Vinnytsia%2C+Vinnyts&#39;ka+oblast!5e0!3m2!1sen!2sua!4v1510841363175" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	    </section>
+	    <footer class="footer">
+		    <div class="container">
+		    	<div class="row">
+		    		<div class="col-md-4 col-sm-12 col-xs-12">
+		    			<p>&#169; <span class="footer-date">2017</span> <span class="footer-name"> Olshevskyi</span></p>
+		    		</div>
+		    		<div class="col-md-4 col-sm-8 col-xs-12 conav-footer">
+		    			<div class="col-md-4 col-sm-4 col-xs-4"><a href="">Home</a></div>
+		    			<div class="col-md-4 col-sm-4 col-xs-4"><a data-toggle="modal" data-target="#myModal" href="#about">About</a></div>
+		    			<div class="col-md-4 col-sm-4 col-xs-4"><a target="_blank" href="CURRICULUM_VITAE.pdf">Resume</a></div>
+		    		</div>
+		    		<div class="col-md-4 col-sm-4 col-xs-12">
+		    			<div id="fb-root"></div>
+						<div class="fb-share-button" data-href="http://new-port.web-lessons.in.ua/" data-layout="button_count" data-size="large" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fnew-port.web-lessons.in.ua%2F&amp;src=sdkpreparse">Share</a></div>
+		    		</div>
+		    	</div>
+		    </div>	
+	    </footer>
+		<script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="lib/progressbar/progressbar.min.js"></script>
+		<script src="https://intita.com/api/dist/intita-api-client.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/main5.js"></script>
+		<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="lib/parallax-js/parallax.min.js"></script>
+		<script type="text/javascript" src="lib/OwlCarousel2/dist/owl.carousel.min.js"></script>
+		<script type="text/javascript">
+			 $('.owl-carousel').owlCarousel({
+		        items:1,
+		        merge:true,
+		        loop:true,
+		        margin:10,
+		        video:true,
+		        lazyLoad:true,
+		        center:true,
+		        nav: true,
+		        navText: ["<i class='fa fa-angle-left' aria-hidden='true'></i>","<i class='fa fa-angle-right' aria-hidden='true'></i>"],
+		        
+		    })
+		</script>
+	</body>
+</html>
